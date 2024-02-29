@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0.1;
+	box-sizing: border-box;
+	font-family: Trebuchet MS;
+}
+
+.container {
+	width: 95%;
+	margin: auto;
+}
+
+header {
+	color: #685d55;
+	height: 2.5rem;
+	background-color: #FEECE2;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+h1{
+	float: left;
+}
+
+header .container {
+	display: table;
+}
+
+#menu-bar {
+	display: none;
+}
+
+header label {
+	float: right;
+	font-size: 20px;
+	margin: 5px;
+}
+
+.menu {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 90vh;
+	background-color: rgba(226, 191, 179, 0.5) ;
+	transition: all 0.3s;
+	transform: translateX(-100%);
+}
+
+.menu a {
+	display: block;
+	color: #FEECE2;
+	height: 40px;
+	padding: 0.5rem;
+	border-bottom: 1px solid rgba(104, 93, 85, 0.5) ;
+}
+
+.menu a:hover {
+	background: rgba(104, 93, 85, 0.2) ;
+}
+
+#menu-bar:checked ~ .menu {
+	transform: translateX(0%);
+}
+
+@media (min-width:1024px) {
+	.menu {
+		position: static;
+		width: auto;
+		height: auto;
+		transform: translateX(0%);
+		float: right;
+		display: flex;
+	}
+
+	.menu a {
+		border: none;
+	}
+
+	header label {
+		display: none;;
+	}
+}
+
+#banner {
+	margin-top: 40px;
+	position: relative;
+}
+
+#banner img {
+	width: 100%;
+	height: 80%;
+}
+
+#banner .container {
+	position: absolute;
+	top: 57%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color:#FEECE2;
+}
+
+#banner h2 {
+	font-size: 30px;
+	padding-top: 5em;
+}
+
+.container #mv {
+	background-color: #CCD3CA;
+    width: 100%;
+    --column-width: 491px;
+    --column-flex: 491;
+}
+
+.mission {
+	text-align: center;
+	display: flex;
+	color: #685d55;
+	padding: 1em;
+	border: 0.2em solid #685d55;
+	font-size: 1em;
+	justify-content: center;
+}
+
+.vission {
+	text-align: center;
+	display: flex;
+	width: 45%;
+	color: #685d55;
+	padding: 1em;
+	margin: 5em auto 3em;
+	border: 0.2em solid #685d55;
+	font-size: 1em;
+	justify-content: center;
+}
+
+.vission a:hover {
+	background-color: #B3A398;
+	color: #685d55;
+}
+
+.images a {
+	display: flex;
+	width: 45%;
+	color: #789461;
+	text-decoration: none;
+	padding: 1em;
+	margin: 5em auto 3em;
+	border: 0.2em solid #789461;
+	font-size: 1em;
+	justify-content: center;
+}
+
+.images a:hover {
+	background-color: #BBC3A4;
+	color: #789461;
+}
+
+
+/*
+#E2BFB3
+#FEECE2
+#CCD3CA
+#BBC3A4
+#789461
+#B3A398
+#685d55
+#B5C0D0
+#EED3D9
+*/
