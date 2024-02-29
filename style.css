@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0.1;
 	box-sizing: border-box;
-	font-family: Trebuchet MS;
+	font-family: 'quicksandregular';
 }
 
 .container {
@@ -11,7 +11,7 @@
 }
 
 header {
-	color: #685d55;
+	color: #4D4242;
 	height: 2.5rem;
 	background-color: #FEECE2;
 	width: 100%;
@@ -39,20 +39,35 @@ header label {
 	margin: 5px;
 }
 
+.nav {
+	text-align: left;
+	line-height: 1.6em;
+	margin-left: 5em;
+	position: absolute;
+	width: 100%;
+}
+
+.nav a {
+	display: block;
+	color: #4D4242;
+	text-decoration: none;
+}
+
 .menu {
 	position: absolute;
 	top: 40px;
 	left: 0;
 	width: 100%;
 	height: 90vh;
-	background-color: rgba(226, 191, 179, 0.5) ;
+	background-color: rgba(247,236,228, 0.5) ;
 	transition: all 0.3s;
 	transform: translateX(-100%);
 }
 
 .menu a {
 	display: block;
-	color: #FEECE2;
+	color: #4D4242;
+	text-decoration: none;
 	height: 40px;
 	padding: 0.5rem;
 	border-bottom: 1px solid rgba(104, 93, 85, 0.5) ;
@@ -106,40 +121,64 @@ header label {
 #banner h2 {
 	font-size: 30px;
 	padding-top: 5em;
+	color:#FEECE2;
 }
 
-.container #mv {
-	background-color: #CCD3CA;
+p {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 1.6em;
+}
+
+.mv #pt-1 {
+	background-color: #FFF3D4;
+}
+
+.mv #pt-2 {
+	background-color: #EAF7C1;
+}
+
+.mv > div {
+	width: 50%;
+}
+.mv > h2 {
+	width: 50%;
+}
+
+.mv {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
     width: 100%;
-    --column-width: 491px;
-    --column-flex: 491;
-}
-
-.mission {
 	text-align: center;
-	display: flex;
-	color: #685d55;
+	display: relative;
+	color: #333333;
 	padding: 1em;
-	border: 0.2em solid #685d55;
 	font-size: 1em;
 	justify-content: center;
 }
 
-.vission {
-	text-align: center;
-	display: flex;
-	width: 45%;
-	color: #685d55;
-	padding: 1em;
-	margin: 5em auto 3em;
-	border: 0.2em solid #685d55;
-	font-size: 1em;
-	justify-content: center;
+h2 {
+	padding-top: 0.5em;
+	font-family: 'Poppins';
+	font-size: 44px;
+	font-weight: lighter;
 }
 
-.vission a:hover {
-	background-color: #B3A398;
-	color: #685d55;
+.mv .container {
+	padding: 1em;
+	margin-top: 1em;
+}
+
+.mv img {
+	padding: 1em;
+	width: 40%;
+	height: 100%;
+}
+
+.images h2 {
+	padding: 1em;
+	margin-top: 1em;
 }
 
 .images a {
@@ -159,15 +198,63 @@ header label {
 	color: #789461;
 }
 
+.frame-slider {
+	width: 100%;
+	height: 100%;
+	margin: 3em auto;
+	overflow: hidden;
+	border: 6px solid;
+	border-color: #4D4242;
+}
 
-/*
-#E2BFB3
-#FEECE2
-#CCD3CA
-#BBC3A4
-#789461
-#B3A398
-#685d55
-#B5C0D0
-#EED3D9
-*/
+.frame-slider .container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.frame-slider ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	height: 100%;
+	animation: slide 5s infinite alternate;
+}
+
+.frame-slider li {
+	list-style: none;
+	width: 100%;
+}
+
+.frame-slider img {
+	height: 100%;
+	width: 100%;
+}
+
+@keyframes slide {
+	0%{margin-left: 0%;}
+	30%{margin-left: 0%;}
+
+	35%{margin-left: -100%;}
+	65%{margin-left: -100%;}
+
+	70%{margin-left: -200%;}
+	100%{margin-left: -200%;}
+}
+
+.footer {
+	text-align: center;
+	background: #F7ECE4;
+	color: #333333;
+	padding: 5em;
+}
+
+.footerC{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.footerC > div{
+	width: 50%;
+}
