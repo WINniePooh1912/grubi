@@ -258,3 +258,74 @@ h2 {
 .footerC > div{
 	width: 50%;
 }
+
+.main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.signup-login__container {
+	width: auto;
+	padding: 0 20px 20px;
+	align-items: center;
+	justify-content: center;
+	/* background-color: #F7ECE4; */
+}
+
+.signup-login__container--form {
+	/* border: #4D4242 2px solid; */
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.signup-login__container--form #input {
+	align-items: center;
+	margin-bottom: 30px;
+	height: 30px;
+	width: 100%;
+	padding: 0px 20px;
+	font-size: 20px;
+}
+
+.signup-login__container--form .button {
+	text-align: center;
+	width: 100%;
+	border-radius: 25px;
+	font-size: 1.6em;
+}
+
+#input:hover {
+	background-color: #BBC3A4;
+}
+
+#input:hover::placeholder {
+	color: #333333;
+}
+
+#input::placeholder {
+	color: #BBC3A4;
+}
+
+.signup-login__container p{
+	padding: 1em 0;
+	color: #4D4242;
+}
+
+.signup-login__container a{
+	color: #4D4242;
+	text-decoration: none;
+}
+
+.signup-login__container a:hover{
+	color: rgba(204, 196, 190, 0.8);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.signup-login__container h2{
+	margin: 1em 0;
+	color: #4D4242;
+}
